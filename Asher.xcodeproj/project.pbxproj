@@ -13,6 +13,15 @@
 		E702C60115EE01E4005DD1D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E702C5FF15EE01E4005DD1D9 /* InfoPlist.strings */; };
 		E702C60315EE01E4005DD1D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C60215EE01E4005DD1D9 /* main.m */; };
 		E702C60715EE01E4005DD1D9 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */; };
+		E702C61115EE020F005DD1D9 /* ASNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C61015EE020F005DD1D9 /* ASNetwork.m */; };
+		E702C61415EE0417005DD1D9 /* ASNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C61315EE0417005DD1D9 /* ASNewsViewController.m */; };
+		E702C61915EE0612005DD1D9 /* ASFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C61815EE0612005DD1D9 /* ASFeed.m */; };
+		E702C62415EE527A005DD1D9 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = E702C62015EE527A005DD1D9 /* CHANGELOG.md */; };
+		E702C62515EE527A005DD1D9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C62215EE527A005DD1D9 /* JSONKit.m */; };
+		E702C62615EE527A005DD1D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E702C62315EE527A005DD1D9 /* README.md */; };
+		E702C62915EE56B2005DD1D9 /* ASStoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C62815EE56B2005DD1D9 /* ASStoryCell.m */; };
+		E702C62F15EE6C7A005DD1D9 /* Missing.png in Resources */ = {isa = PBXBuildFile; fileRef = E702C62B15EE6C7A005DD1D9 /* Missing.png */; };
+		E702C63015EE6C7A005DD1D9 /* Missing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E702C62C15EE6C7A005DD1D9 /* Missing@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,21 @@
 		E702C60415EE01E4005DD1D9 /* Asher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asher-Prefix.pch"; sourceTree = "<group>"; };
 		E702C60515EE01E4005DD1D9 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		E702C60F15EE020F005DD1D9 /* ASNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASNetwork.h; path = Model/ASNetwork.h; sourceTree = "<group>"; };
+		E702C61015EE020F005DD1D9 /* ASNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASNetwork.m; path = Model/ASNetwork.m; sourceTree = "<group>"; };
+		E702C61215EE0417005DD1D9 /* ASNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASNewsViewController.h; path = View/ASNewsViewController.h; sourceTree = "<group>"; };
+		E702C61315EE0417005DD1D9 /* ASNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASNewsViewController.m; path = View/ASNewsViewController.m; sourceTree = "<group>"; };
+		E702C61515EE04C1005DD1D9 /* ASConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ASConstants.h; path = Model/ASConstants.h; sourceTree = "<group>"; };
+		E702C61715EE0612005DD1D9 /* ASFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASFeed.h; path = Model/ASFeed.h; sourceTree = "<group>"; };
+		E702C61815EE0612005DD1D9 /* ASFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASFeed.m; path = Model/ASFeed.m; sourceTree = "<group>"; };
+		E702C62015EE527A005DD1D9 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		E702C62115EE527A005DD1D9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		E702C62215EE527A005DD1D9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		E702C62315EE527A005DD1D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E702C62715EE56B2005DD1D9 /* ASStoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASStoryCell.h; path = View/ASStoryCell.h; sourceTree = "<group>"; };
+		E702C62815EE56B2005DD1D9 /* ASStoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASStoryCell.m; path = View/ASStoryCell.m; sourceTree = "<group>"; };
+		E702C62B15EE6C7A005DD1D9 /* Missing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Missing.png; sourceTree = "<group>"; };
+		E702C62C15EE6C7A005DD1D9 /* Missing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Missing@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +96,9 @@
 		E702C5FC15EE01E4005DD1D9 /* Asher */ = {
 			isa = PBXGroup;
 			children = (
+				E702C62A15EE6C79005DD1D9 /* Imagery */,
+				E702C60E15EE01F3005DD1D9 /* Model */,
+				E702C60D15EE01ED005DD1D9 /* View */,
 				E702C60515EE01E4005DD1D9 /* ASAppDelegate.h */,
 				E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */,
 				E702C5FD15EE01E4005DD1D9 /* Supporting Files */,
@@ -82,12 +109,64 @@
 		E702C5FD15EE01E4005DD1D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E702C61E15EE527A005DD1D9 /* Vendor */,
 				E702C5FE15EE01E4005DD1D9 /* Asher-Info.plist */,
 				E702C5FF15EE01E4005DD1D9 /* InfoPlist.strings */,
 				E702C60215EE01E4005DD1D9 /* main.m */,
 				E702C60415EE01E4005DD1D9 /* Asher-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E702C60D15EE01ED005DD1D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E702C61215EE0417005DD1D9 /* ASNewsViewController.h */,
+				E702C61315EE0417005DD1D9 /* ASNewsViewController.m */,
+				E702C62715EE56B2005DD1D9 /* ASStoryCell.h */,
+				E702C62815EE56B2005DD1D9 /* ASStoryCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E702C60E15EE01F3005DD1D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E702C60F15EE020F005DD1D9 /* ASNetwork.h */,
+				E702C61015EE020F005DD1D9 /* ASNetwork.m */,
+				E702C61515EE04C1005DD1D9 /* ASConstants.h */,
+				E702C61715EE0612005DD1D9 /* ASFeed.h */,
+				E702C61815EE0612005DD1D9 /* ASFeed.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E702C61E15EE527A005DD1D9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E702C61F15EE527A005DD1D9 /* JSONKit */,
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		E702C61F15EE527A005DD1D9 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				E702C62015EE527A005DD1D9 /* CHANGELOG.md */,
+				E702C62115EE527A005DD1D9 /* JSONKit.h */,
+				E702C62215EE527A005DD1D9 /* JSONKit.m */,
+				E702C62315EE527A005DD1D9 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		E702C62A15EE6C79005DD1D9 /* Imagery */ = {
+			isa = PBXGroup;
+			children = (
+				E702C62B15EE6C7A005DD1D9 /* Missing.png */,
+				E702C62C15EE6C7A005DD1D9 /* Missing@2x.png */,
+			);
+			path = Imagery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E702C60115EE01E4005DD1D9 /* InfoPlist.strings in Resources */,
+				E702C62415EE527A005DD1D9 /* CHANGELOG.md in Resources */,
+				E702C62615EE527A005DD1D9 /* README.md in Resources */,
+				E702C62F15EE6C7A005DD1D9 /* Missing.png in Resources */,
+				E702C63015EE6C7A005DD1D9 /* Missing@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +238,11 @@
 			files = (
 				E702C60315EE01E4005DD1D9 /* main.m in Sources */,
 				E702C60715EE01E4005DD1D9 /* ASAppDelegate.m in Sources */,
+				E702C61115EE020F005DD1D9 /* ASNetwork.m in Sources */,
+				E702C61415EE0417005DD1D9 /* ASNewsViewController.m in Sources */,
+				E702C61915EE0612005DD1D9 /* ASFeed.m in Sources */,
+				E702C62515EE527A005DD1D9 /* JSONKit.m in Sources */,
+				E702C62915EE56B2005DD1D9 /* ASStoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +313,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Asher/Asher-Prefix.pch";
 				INFOPLIST_FILE = "Asher/Asher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -236,6 +325,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Asher/Asher-Prefix.pch";
 				INFOPLIST_FILE = "Asher/Asher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

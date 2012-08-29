@@ -7,6 +7,7 @@
 //
 
 #import "ASAppDelegate.h"
+#import "ASNewsViewController.h"
 
 @implementation ASAppDelegate
 
@@ -19,9 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+    
+    ASNewsViewController *_newsViewController = [[ASNewsViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *_rootNavController = [[UINavigationController alloc] initWithRootViewController:[_newsViewController autorelease]];
+    
+    self.window.rootViewController = [_rootNavController autorelease];
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
