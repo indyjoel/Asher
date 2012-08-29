@@ -1,0 +1,6 @@
+Asher (30/08/2012)
+---
+
+* Requires LLVM Compiler 4.0.
+* If cloning from remote git, ensure submodules are up to date before build.
+
