@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E702C5F715EE01E4005DD1D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E702C5F615EE01E4005DD1D9 /* UIKit.framework */; };
+		E702C5F915EE01E4005DD1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E702C5F815EE01E4005DD1D9 /* Foundation.framework */; };
+		E702C5FB15EE01E4005DD1D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E702C5FA15EE01E4005DD1D9 /* CoreGraphics.framework */; };
+		E702C60115EE01E4005DD1D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E702C5FF15EE01E4005DD1D9 /* InfoPlist.strings */; };
+		E702C60315EE01E4005DD1D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C60215EE01E4005DD1D9 /* main.m */; };
+		E702C60715EE01E4005DD1D9 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E702C5F215EE01E4005DD1D9 /* Asher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E702C5F615EE01E4005DD1D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E702C5F815EE01E4005DD1D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E702C5FA15EE01E4005DD1D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E702C5FE15EE01E4005DD1D9 /* Asher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Asher-Info.plist"; sourceTree = "<group>"; };
+		E702C60015EE01E4005DD1D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E702C60215EE01E4005DD1D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E702C60415EE01E4005DD1D9 /* Asher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asher-Prefix.pch"; sourceTree = "<group>"; };
+		E702C60515EE01E4005DD1D9 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E702C5EF15EE01E4005DD1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702C5F715EE01E4005DD1D9 /* UIKit.framework in Frameworks */,
+				E702C5F915EE01E4005DD1D9 /* Foundation.framework in Frameworks */,
+				E702C5FB15EE01E4005DD1D9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E702C5E715EE01E3005DD1D9 = {
+			isa = PBXGroup;
+			children = (
+				E702C5FC15EE01E4005DD1D9 /* Asher */,
+				E702C5F515EE01E4005DD1D9 /* Frameworks */,
+				E702C5F315EE01E4005DD1D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E702C5F315EE01E4005DD1D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E702C5F215EE01E4005DD1D9 /* Asher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E702C5F515EE01E4005DD1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E702C5F615EE01E4005DD1D9 /* UIKit.framework */,
+				E702C5F815EE01E4005DD1D9 /* Foundation.framework */,
+				E702C5FA15EE01E4005DD1D9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E702C5FC15EE01E4005DD1D9 /* Asher */ = {
+			isa = PBXGroup;
+			children = (
+				E702C60515EE01E4005DD1D9 /* ASAppDelegate.h */,
+				E702C60615EE01E4005DD1D9 /* ASAppDelegate.m */,
+				E702C5FD15EE01E4005DD1D9 /* Supporting Files */,
+			);
+			path = Asher;
+			sourceTree = "<group>";
+		};
+		E702C5FD15EE01E4005DD1D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E702C5FE15EE01E4005DD1D9 /* Asher-Info.plist */,
+				E702C5FF15EE01E4005DD1D9 /* InfoPlist.strings */,
+				E702C60215EE01E4005DD1D9 /* main.m */,
+				E702C60415EE01E4005DD1D9 /* Asher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E702C5F115EE01E4005DD1D9 /* Asher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E702C60A15EE01E4005DD1D9 /* Build configuration list for PBXNativeTarget "Asher" */;
+			buildPhases = (
+				E702C5EE15EE01E4005DD1D9 /* Sources */,
+				E702C5EF15EE01E4005DD1D9 /* Frameworks */,
+				E702C5F015EE01E4005DD1D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Asher;
+			productName = Asher;
+			productReference = E702C5F215EE01E4005DD1D9 /* Asher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E702C5E915EE01E3005DD1D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Alan Zeino";
+			};
+			buildConfigurationList = E702C5EC15EE01E3005DD1D9 /* Build configuration list for PBXProject "Asher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E702C5E715EE01E3005DD1D9;
+			productRefGroup = E702C5F315EE01E4005DD1D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E702C5F115EE01E4005DD1D9 /* Asher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E702C5F015EE01E4005DD1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702C60115EE01E4005DD1D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E702C5EE15EE01E4005DD1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702C60315EE01E4005DD1D9 /* main.m in Sources */,
+				E702C60715EE01E4005DD1D9 /* ASAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E702C5FF15EE01E4005DD1D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E702C60015EE01E4005DD1D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E702C60815EE01E4005DD1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E702C60915EE01E4005DD1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E702C60B15EE01E4005DD1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Asher/Asher-Prefix.pch";
+				INFOPLIST_FILE = "Asher/Asher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E702C60C15EE01E4005DD1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Asher/Asher-Prefix.pch";
+				INFOPLIST_FILE = "Asher/Asher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E702C5EC15EE01E3005DD1D9 /* Build configuration list for PBXProject "Asher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702C60815EE01E4005DD1D9 /* Debug */,
+				E702C60915EE01E4005DD1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E702C60A15EE01E4005DD1D9 /* Build configuration list for PBXNativeTarget "Asher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702C60B15EE01E4005DD1D9 /* Debug */,
+				E702C60C15EE01E4005DD1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E702C5E915EE01E3005DD1D9 /* Project object */;
+}
