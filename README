@@ -3,4 +3,4 @@ Asher (30/08/2012)
 
 * Requires LLVM Compiler 4.0.
 * If cloning from remote git, ensure submodules are up to date before build.
-
+* Xcode 4.4 drops ARMv6; so it will improperly validate < iOS 4.3 code.
