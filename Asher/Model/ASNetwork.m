@@ -40,18 +40,22 @@
     // returned JSON is not Unicode compliant
     NSString *_jsonString = [[[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding] autorelease];
     NSData *_utfJSONData = [_jsonString dataUsingEncoding:NSUTF8StringEncoding];
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 50000
-    NSError *_jsonError = nil;
-    NSDictionary *_rootObj = [NSJSONSerialization JSONObjectWithData:_utfJSONData
-                                                             options:NSJSONWritingPrettyPrinted
-                                                               error:&_jsonError];
-    if (_rootObj == nil)
-        NSLog(@"_jsonError: %@", [_jsonError localizedDescription]);
-#else
-    NSDictionary *_rootObj = [_utfJSONData objectFromJSONData];
-#endif
-        
+    
+    NSDictionary *_rootObj;
+    if (NSClassFromString(@"NSJSONSerialization"))
+    {
+        NSError *_jsonError = nil;
+        _rootObj = [NSJSONSerialization JSONObjectWithData:_utfJSONData
+                                                                 options:NSJSONWritingPrettyPrinted
+                                                                   error:&_jsonError];
+        if (_rootObj == nil)
+            NSLog(@"_jsonError: %@", [_jsonError localizedDescription]);
+    }
+    else
+    {
+        _rootObj = [_utfJSONData objectFromJSONData];
+    }
+    
     if ([self.delegate respondsToSelector:@selector(network:didEndRequestWithFeed:)])
         [self.delegate network:self didEndRequestWithFeed:[[[ASFeed alloc] initWithDictionary:_rootObj] autorelease]];
 }
@@ -63,11 +67,26 @@
     [self _requestBegan];
     
     NSURLRequest *_request = [NSURLRequest requestWithURL:url];
-    [NSURLConnection sendAsynchronousRequest:_request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *_resp, NSData *_data, NSError *_error) {
-                               [self _requestComplete:_data];
-                           }];
+    if ([NSURLConnection respondsToSelector:@selector(sendAsynchronousRequest:queue:completionHandler:)])
+    {
+        [NSURLConnection sendAsynchronousRequest:_request
+                                           queue:[NSOperationQueue mainQueue]
+                               completionHandler:^(NSURLResponse *_resp, NSData *_data, NSError *_error) {
+                                   [self _requestComplete:_data];
+                               }];
+    }
+    else
+    {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSURLResponse *_resp = nil;
+            NSError *_error = nil;
+            NSData *_data = [NSURLConnection sendSynchronousRequest:_request returningResponse:&_resp error:&_error];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self _requestComplete:_data];
+            });
+        });
+    }
 }
 
 + (UIImage *)cachedImageForURL:(NSURL *)url
